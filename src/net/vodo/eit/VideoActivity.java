@@ -40,6 +40,9 @@ public class VideoActivity extends Activity {
     			destination =  (String) getResources().getText(R.string.v3_destination);    	    		 
     			break;
     	}
+//    	Toast.makeText(getApplicationContext(), hash,
+//    			Toast.LENGTH_SHORT).show();
+
     	getWindow().setFormat(PixelFormat.TRANSLUCENT); 
     	VideoView videoHolder = new VideoView(this);
         videoHolder.setMediaController(new MediaController(this));
