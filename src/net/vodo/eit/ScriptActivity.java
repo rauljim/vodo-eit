@@ -44,7 +44,7 @@ import android.widget.VideoView;
 
 import android.content.pm.*;
 
-import com.tudelft.triblerdroid.first.R;
+import net.vodo.eit.R;
 import com.googlecode.android_scripting.Constants;
 import com.googlecode.android_scripting.facade.ActivityResultFacade;
 import com.googlecode.android_scripting.jsonrpc.RpcReceiverManager;
