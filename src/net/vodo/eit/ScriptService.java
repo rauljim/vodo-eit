@@ -22,14 +22,15 @@ import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Binder;
 import android.os.IBinder;
-import android.provider.SyncStateContract.Constants;
-import android.util.Log;
 
+import net.vodo.eit.R;
 import com.googlecode.android_scripting.AndroidProxy;
 import com.googlecode.android_scripting.BaseApplication;
+import com.googlecode.android_scripting.Constants;
 import com.googlecode.android_scripting.FeaturedInterpreters;
 import com.googlecode.android_scripting.FileUtils;
 import com.googlecode.android_scripting.ForegroundService;
+import com.googlecode.android_scripting.Log;
 import com.googlecode.android_scripting.NotificationIdFactory;
 import com.googlecode.android_scripting.ScriptLauncher;
 import com.googlecode.android_scripting.interpreter.Interpreter;
@@ -172,7 +173,7 @@ public class ScriptService extends ForegroundService {
 	@Override
 	protected Notification createNotification() {
 	    Notification notification =
-	        new Notification(R.drawable.script_logo_48, this.getString(R.string.loading), System.currentTimeMillis());
+	        new Notification(R.drawable.vodo_logo, this.getString(R.string.loading), System.currentTimeMillis());
 	    // This contentIntent is a noop.
 	    PendingIntent contentIntent = PendingIntent.getService(this, 0, new Intent(), 0);
 	    notification.setLatestEventInfo(this, this.getString(R.string.app_name), this.getString(R.string.loading), contentIntent);
