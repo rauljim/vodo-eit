@@ -1,4 +1,4 @@
-package com.tudelft.triblerdroid.first;
+package net.vodo.eit;
 
 import com.googlecode.android_scripting.BaseApplication;
 import com.googlecode.android_scripting.Log;

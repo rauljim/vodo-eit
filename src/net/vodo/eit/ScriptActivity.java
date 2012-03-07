@@ -14,7 +14,7 @@
  * the License.
  */
 
-package com.tudelft.triblerdroid.first;
+package net.vodo.eit;
 
 import android.app.Activity;
 

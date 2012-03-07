@@ -1,4 +1,4 @@
-package com.tudelft.triblerdroid.first;
+package net.vodo.eit;
 
 import android.app.Activity;
 import android.app.AlertDialog;

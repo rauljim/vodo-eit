@@ -1,4 +1,4 @@
-package org.vodo.eit;
+package net.vodo.eit;
 
 public class NativeLib {
 

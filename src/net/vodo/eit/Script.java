@@ -1,8 +1,8 @@
 // Copyright 2010 Google Inc. All Rights Reserved.
 
-package com.tudelft.triblerdroid.first;
+package net.vodo.eit;
 
-import com.tudelft.triblerdroid.first.R;
+import net.vodo.eit.R;
 
 import android.content.Context;
 import android.content.res.Resources;
