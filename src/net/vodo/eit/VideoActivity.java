@@ -5,6 +5,7 @@ import android.graphics.PixelFormat;
 import android.net.Uri;
 import android.os.Bundle;
 import android.widget.MediaController;
+import android.widget.Toast;
 import android.widget.VideoView;
 
 
@@ -15,7 +16,30 @@ public class VideoActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
     	super.onCreate(savedInstanceState);
+    	Bundle extras = getIntent().getExtras();
+    	final Integer pos = extras.getInt("video_pos", 0);
     	
+     	String hash = "HH";
+    	String tracker = "Tr";
+    	String destination = "De";
+    	
+    	switch (pos) {
+    		case 0: 
+    			hash =  (String) getResources().getText(R.string.v1_hash);
+    			tracker =  (String) getResources().getText(R.string.v1_tracker);
+    			destination =  (String) getResources().getText(R.string.v1_destination);    	    		 
+    			break;
+    		case 1:
+    			hash =  (String) getResources().getText(R.string.v2_hash);
+    			tracker =  (String) getResources().getText(R.string.v2_tracker);
+    			destination =  (String) getResources().getText(R.string.v2_destination);    	    		 
+    			break;
+    		case 2:
+    			hash =  (String) getResources().getText(R.string.v3_hash);
+    			tracker =  (String) getResources().getText(R.string.v3_tracker);
+    			destination =  (String) getResources().getText(R.string.v3_destination);    	    		 
+    			break;
+    	}
     	getWindow().setFormat(PixelFormat.TRANSLUCENT); 
     	VideoView videoHolder = new VideoView(this);
         videoHolder.setMediaController(new MediaController(this));
