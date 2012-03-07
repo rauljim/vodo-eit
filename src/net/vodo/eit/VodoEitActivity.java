@@ -36,17 +36,8 @@ public class VodoEitActivity extends ListActivity {
     	    	Toast.makeText(getApplicationContext(), ((TextView) view).getText(),
     	    			Toast.LENGTH_SHORT).show();
 
-//        	   	getWindow().setFormat(PixelFormat.TRANSLUCENT); 
-//            	VideoView videoHolder = new VideoView(VodoEitActivity.this);
-//                videoHolder.setMediaController(new MediaController(VodoEitActivity.this));
-//                setContentView(videoHolder);
-////                videoHolder.setVideoURI(Uri.parse("file:///sdcard/DCIM/Camera/VID_20120307_104339.mp4"));
-//                videoHolder.setVideoURI(Uri.parse("http://commonsware.com/misc/test2.3gp"));
-//                videoHolder.requestFocus();
-//                videoHolder.start(); 
-
-    	    	//Start video
-    	    	Intent intent = new Intent(VodoEitActivity.this, VideoActivity.class);
+    	    	//See video info
+    	    	Intent intent = new Intent(VodoEitActivity.this, VideoInfoActivity.class);
     	    	startActivity(intent);
 
     	    	
